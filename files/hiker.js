@@ -22,8 +22,12 @@ function closestToZero(listOfNumbers) {
   };
   
   for (let i = 1; i < listOfNumbers.length; i++) {
-    if (getDistanceToZero(listOfNumbers[i])<getDistanceToZero(min)){
-      min = listOfNumbers[i];
+    if (getDistanceToZero(listOfNumbers[i])<getDistanceToZero(min)){      
+        min = listOfNumbers[i];
+    }else if(getDistanceToZero(listOfNumbers[i])==getDistanceToZero(min)){
+      if(listOfNumbers[i]>min){
+        min = listOfNumbers[i];
+      }
     }
   }
 
