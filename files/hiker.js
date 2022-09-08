@@ -14,7 +14,7 @@ function closestToZero1(listOfNumbers) {
   }  
 }
 
-function closestToZero(listOfNumbers) {
+function closestToZero2(listOfNumbers) {
   let min = listOfNumbers[0];
   
   let getDistanceToZero = function getDistanceToZero(number){
@@ -34,5 +34,8 @@ function closestToZero(listOfNumbers) {
   return min;  
 }
 
+function closestToZero(listOfNumbers){
+  
+}
 
 module.exports = closestToZero;
