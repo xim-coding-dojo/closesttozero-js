@@ -1,25 +1,21 @@
 FAIL ./hiker.test.js
-  Testing the close to zero function
-    ✕ get the closest value for positive value (1 ms)
+  ● Test suite failed to run
 
-  ● Testing the close to zero function › get the closest value for positive value
+    ReferenceError: answer is not defined
 
-    ReferenceError: closestToZero is not defined
+      5 | }
+      6 | 
+    > 7 | module.exports = answer;
+        |                  ^
+      8 | 
 
-       6 |   it('get the closest value for positive value', () => {
-       7 |     
-    >  8 |     expect(closestToZero([1,2])).toEqual(1);
-         |     ^
-       9 |   });
-      10 | });
-      11 | 
-
-      at Object.<anonymous> (hiker.test.js:8:5)
+      at Object.<anonymous> (hiker.js:7:18)
+      at Object.<anonymous> (hiker.test.js:3:16)
 
 Test Suites: 1 failed, 1 total
-Tests:       1 failed, 1 total
+Tests:       0 total
 Snapshots:   0 total
-Time:        1.337 s
+Time:        1.31 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -30,4 +26,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T18_14_37_426Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T18_15_10_673Z-debug.log

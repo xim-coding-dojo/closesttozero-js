@@ -1,6 +1,6 @@
 'use strict';
 
-function answer() {
+function closestToZero() {
   return 6 * 9;
 }
 
