@@ -3,45 +3,37 @@
 > eslint --config ${CYBER_DOJO_SANDBOX}/.eslintrc.json /**/*.js
 
 
-/sandbox/hiker.js
-  69:22  error  Missing semicolon  semi
-  70:19  error  Missing semicolon  semi
-
-✖ 2 problems (2 errors, 0 warnings)
-  2 errors and 0 warnings potentially fixable with the `--fix` option.
-
-
 > @ test /sandbox
 > jest --coverage
 
   console.log
-    [ 2, 1 ]
+    [ 1, 2 ]
 
-      at closestToZero (hiker.js:69:11)
-
-  console.log
-    [ 7, 2, 9 ]
-
-      at closestToZero (hiker.js:69:11)
+      at closestToZero (hiker.js:73:11)
 
   console.log
-    [ -7, 2, 9 ]
+    [ 2, 7, 9 ]
 
-      at closestToZero (hiker.js:69:11)
-
-  console.log
-    [ -7, -2, 9 ]
-
-      at closestToZero (hiker.js:69:11)
+      at closestToZero (hiker.js:73:11)
 
   console.log
-    [ -7, -2, 2 ]
+    [ 2, -7, 9 ]
 
-      at closestToZero (hiker.js:69:11)
+      at closestToZero (hiker.js:73:11)
+
+  console.log
+    [ -2, -7, 9 ]
+
+      at closestToZero (hiker.js:73:11)
+
+  console.log
+    [ 2, -2, -7 ]
+
+      at closestToZero (hiker.js:73:11)
 
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
-All files |   23.53 |    11.11 |   22.22 |      25 |                   
- hiker.js |   23.53 |    11.11 |   22.22 |      25 | 4-56              
+All files |   27.03 |    22.73 |   22.22 |   28.57 |                   
+ hiker.js |   27.03 |    22.73 |   22.22 |   28.57 | 4-56,67           
 ----------|---------|----------|---------|---------|-------------------

@@ -63,11 +63,15 @@ function closestToZero(listOfNumbers){
 
     if(a_distance > b_distance) {
             return 1;
+    }else if(a_distance == b_distance && b_distance > a_distance){
+      return 1;
+    }else{
+      return -1;
     }
   });
   
-  console.log(sorted)
-  return sorted[0]
+  console.log(sorted);
+  return sorted[0];
 }
 
 
