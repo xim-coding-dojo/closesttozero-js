@@ -1,12 +1,40 @@
-PASS ./hiker.test.js
+FAIL ./hiker.test.js
   Testing the close to zero function
-    ✓ get the closest value for 2 positive value (2 ms)
-    ✓ get the closest value for 3 positive value
-    ✓ get the closest value for 2 positive value and 1 negative value (1 ms)
+    ✓ get the closest value for 2 positive value (3 ms)
+    ✓ get the closest value for 3 positive value (1 ms)
     ✓ get the closest value for 2 positive value and 1 negative value
+    ✓ get the closest value for 2 positive value and 1 negative value
+    ✕ get the closest value for 2 positive value and 1 negative value with a tie (3 ms)
 
-Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
+  ● Testing the close to zero function › get the closest value for 2 positive value and 1 negative value with a tie
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 2
+    Received: -2
+
+      25 |   it('get the closest value for 2 positive value and 1 negative value with a tie', () => {
+      26 |     
+    > 27 |     expect(closestToZero([-7,-2,2])).toEqual(2);
+         |                                      ^
+      28 |   });
+      29 | });
+      30 | 
+
+      at Object.<anonymous> (hiker.test.js:27:38)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
 Snapshots:   0 total
-Time:        1.308 s
+Time:        1.382 s
 Ran all test suites.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ test: `jest --coverage`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ test script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T18_41_59_616Z-debug.log
