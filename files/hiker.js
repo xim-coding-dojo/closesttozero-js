@@ -91,6 +91,7 @@ function closestToZero(listOfNumbers){
   }else{
     return listOfNumbers[0];
   }
+  return 1;
 }
 
 module.exports = closestToZero;
