@@ -4,14 +4,13 @@
 
 
 /sandbox/hiker.js
-  40:78  error  Missing semicolon  semi
   48:32  error  Missing semicolon  semi
   51:31  error  Missing semicolon  semi
   69:22  error  Missing semicolon  semi
   70:19  error  Missing semicolon  semi
 
-✖ 5 problems (5 errors, 0 warnings)
-  5 errors and 0 warnings potentially fixable with the `--fix` option.
+✖ 4 problems (4 errors, 0 warnings)
+  4 errors and 0 warnings potentially fixable with the `--fix` option.
 
 
 > @ test /sandbox
