@@ -45,10 +45,10 @@ function closestToZero3(listOfNumbers){
            return currentValue;
         }
         else if(previousValue.distance == currentValue.distance && currentValue.originalValue > previousValue.originalValue) {
-            return currentValue
+            return currentValue;
         }
         else {
-          return previousValue
+          return previousValue;
         }
       }
     );
