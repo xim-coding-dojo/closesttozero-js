@@ -507,5 +507,21 @@
       53,
       187233
     ]
+  },
+  {
+    "duration": 4.25286,
+    "colour": "red",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 32,
+    "time": [
+      2022,
+      9,
+      8,
+      19,
+      8,
+      6,
+      497763
+    ]
   }
 ]
