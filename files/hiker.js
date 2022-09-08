@@ -82,7 +82,7 @@ function closestToZero(listOfNumbers){
     let b_distance = Math.abs(b);
     
     if(a_distance > b_distance) {
-       listOfNumbers[0] = b;
+       return b;
     }else if(a_distance == b_distance && b_distance > a_distance){
       return b;
     }else{
@@ -91,7 +91,6 @@ function closestToZero(listOfNumbers){
   }else{
     return listOfNumbers[0];
   }
-  return 1;
 }
 
 module.exports = closestToZero;
