@@ -1,7 +1,7 @@
 'use strict';
 
-function closestToZero() {
-  return 6 * 9;
+function closestToZero(listofNumbers) {
+  return 1;
 }
 
 module.exports = closestToZero;
