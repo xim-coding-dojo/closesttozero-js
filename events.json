@@ -603,5 +603,21 @@
       13,
       116006
     ]
+  },
+  {
+    "duration": 4.424772,
+    "colour": "amber",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 38,
+    "time": [
+      2022,
+      9,
+      8,
+      19,
+      23,
+      29,
+      541341
+    ]
   }
 ]

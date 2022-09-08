@@ -7,16 +7,32 @@ npm ERR! Failed at the @ lint script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_23_09_741Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_23_26_585Z-debug.log
 FAIL ./hiker.test.js
   ● Test suite failed to run
 
-    SyntaxError: /sandbox/hiker.js: Unexpected token, expected ";" (39:65)
+    Jest encountered an unexpected token
+
+    This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
+
+    By default, if Jest sees a Babel config, it will use that to transform your files, ignoring "node_modules".
+
+    Here's what you can do:
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/en/configuration.html
+
+    Details:
+
+    SyntaxError: /sandbox/hiker.js: Unexpected token (39:27)
 
       37 | function closestToZero(listOfNumbers){
       38 |   const minValue = array1
-    > 39 |      .map(originalValue => {originalValue:originalValue, distance:Math.abs(originalValue)};
-         |                                                                  ^
+    > 39 |      .map(originalValue => return {originalValue:originalValue, distance:Math.abs(originalValue)}
+         |                            ^
       40 |      .reduce(
       41 |       (previousValue, currentValue) => {
       42 |         if(previousValue.distance > currentValue.distance) {
@@ -26,7 +42,7 @@ FAIL ./hiker.test.js
 Test Suites: 1 failed, 1 total
 Tests:       0 total
 Snapshots:   0 total
-Time:        1.751 s
+Time:        1.522 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -37,4 +53,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_23_12_589Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_23_29_165Z-debug.log
