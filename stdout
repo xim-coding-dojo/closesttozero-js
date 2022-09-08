@@ -4,12 +4,9 @@
 
 
 /sandbox/hiker.js
-  40:78  error  Missing semicolon  semi
-  48:32  error  Missing semicolon  semi
-  51:31  error  Missing semicolon  semi
+  39:66  error  Parsing error: Unexpected token :
 
-✖ 3 problems (3 errors, 0 warnings)
-  3 errors and 0 warnings potentially fixable with the `--fix` option.
+✖ 1 problem (1 error, 0 warnings)
 
 
 > @ test /sandbox
@@ -18,6 +15,5 @@
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
-All files |   33.33 |     37.5 |   42.86 |      36 |                   
- hiker.js |   33.33 |     37.5 |   42.86 |      36 | 4-34              
+All files |       0 |        0 |       0 |       0 |                   
 ----------|---------|----------|---------|---------|-------------------
