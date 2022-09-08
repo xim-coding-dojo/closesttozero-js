@@ -89,7 +89,7 @@ function closestToZero(listOfNumbers){
       return a;
     }
   }else{
-    return a;
+    return listOfNumbers[0];
   }
 }
 
