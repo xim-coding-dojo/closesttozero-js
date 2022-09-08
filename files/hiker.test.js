@@ -17,8 +17,8 @@ describe('Testing the close to zero function', () => {
     expect(closestToZero([-7,2,9])).toEqual(2);
   });
   
-//  it('get the closest value for 2 positive value and 1 negative value', () => {
+  it('get the closest value for 2 positive value and 1 negative value', () => {
     
-//    expect(closestToZero([-7,-2,9])).toEqual(-2);
-//  });
+    expect(closestToZero([-7,-2,9])).toEqual(-2);
+  });
 });
