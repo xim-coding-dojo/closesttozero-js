@@ -34,7 +34,7 @@ function closestToZero2(listOfNumbers) {
   return min;  
 }
 
-function closestToZero(listOfNumbers){
+function closestToZero3(listOfNumbers){
   const minValue = listOfNumbers
      .map(originalValue => {
        return {originalValue:originalValue, distance:Math.abs(originalValue)}
@@ -55,5 +55,13 @@ function closestToZero(listOfNumbers){
        
     return minValue.originalValue;
 }
+
+function closestToZero(listOfNumbers){
+  let sorted = listOfNumbers.sort((a,b) => a-b);
+  console.log(sorted)
+  return sorted[0]
+}
+
+
 
 module.exports = closestToZero;
