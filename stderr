@@ -1,6 +1,6 @@
 PASS ./hiker.test.js
   Testing the close to zero function
-    ✓ get the closest value for 2 positive value (2 ms)
+    ✓ get the closest value for 2 positive value (3 ms)
     ✓ get the closest value for 3 positive value
     ✓ get the closest value for 2 positive value and 1 negative value (1 ms)
     ✓ get the closest value for 2 positive value and 1 negative value
@@ -9,5 +9,5 @@ PASS ./hiker.test.js
 Test Suites: 1 passed, 1 total
 Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        1.362 s
+Time:        1.497 s
 Ran all test suites.
