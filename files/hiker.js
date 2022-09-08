@@ -15,15 +15,19 @@ function closestToZero1(listOfNumbers) {
 }
 
 function closestToZero(listOfNumbers) {
-  let min = listOfNumbers[]
+  let min = listOfNumbers[0];
+  
+  let getDistanceToZero = function getDistanceToZero(number){
+      return Math.abs(number);
+  };
   
   for (let i = 1; i < listOfNumbers.length; i++) {
-    if ()
+    if (listOfNumbers[i]<min){
+      min = listOfNumbers[i];
+    }
   }
 
-        function getDistanceToZero(number){
-      ret    
-    }
+  return min;  
 }
 
 

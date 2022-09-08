@@ -3,17 +3,12 @@
 > eslint --config ${CYBER_DOJO_SANDBOX}/.eslintrc.json /**/*.js
 
 
-/sandbox/hiker.js
-  18:27  error  Parsing error: Unexpected token ]
-
-✖ 1 problem (1 error, 0 warnings)
-
-
 > @ test /sandbox
 > jest --coverage
 
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
-All files |       0 |        0 |       0 |       0 |                   
+All files |      50 |    33.33 |      25 |      50 |                   
+ hiker.js |      50 |    33.33 |      25 |      50 | 4-13,21           
 ----------|---------|----------|---------|---------|-------------------
