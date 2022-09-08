@@ -23,17 +23,17 @@
       at closestToZero (hiker.js:69:11)
 
   console.log
-    [ 9, 7, 2 ]
+    [ 7, 2, 9 ]
 
       at closestToZero (hiker.js:69:11)
 
   console.log
-    [ 9, -7, 2 ]
+    [ -7, 2, 9 ]
 
       at closestToZero (hiker.js:69:11)
 
   console.log
-    [ 9, -7, -2 ]
+    [ -7, -2, 9 ]
 
       at closestToZero (hiker.js:69:11)
 

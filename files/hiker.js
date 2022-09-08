@@ -62,7 +62,7 @@ function closestToZero(listOfNumbers){
     let b_distance = Math.abs(b);
 
     if(a_distance > b_distance) {
-            return -1;
+            return 1;
     }
   });
   

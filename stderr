@@ -7,14 +7,14 @@ npm ERR! Failed at the @ lint script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_39_52_953Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_40_20_147Z-debug.log
 FAIL ./hiker.test.js
   Testing the close to zero function
-    ✕ get the closest value for 2 positive value (22 ms)
+    ✕ get the closest value for 2 positive value (27 ms)
     ✕ get the closest value for 3 positive value (2 ms)
     ✕ get the closest value for 2 positive value and 1 negative value (2 ms)
     ✕ get the closest value for 2 positive value and 1 negative value (1 ms)
-    ✕ get the closest value for 2 positive value and 1 negative value with a tie (2 ms)
+    ✕ get the closest value for 2 positive value and 1 negative value with a tie (1 ms)
 
   ● Testing the close to zero function › get the closest value for 2 positive value
 
@@ -38,7 +38,7 @@ FAIL ./hiker.test.js
     expect(received).toEqual(expected) // deep equality
 
     Expected: 2
-    Received: 9
+    Received: 7
 
       10 |   it('get the closest value for 3 positive value', () => {
       11 |     
@@ -55,7 +55,7 @@ FAIL ./hiker.test.js
     expect(received).toEqual(expected) // deep equality
 
     Expected: 2
-    Received: 9
+    Received: -7
 
       15 |   it('get the closest value for 2 positive value and 1 negative value', () => {
       16 |     
@@ -72,7 +72,7 @@ FAIL ./hiker.test.js
     expect(received).toEqual(expected) // deep equality
 
     Expected: -2
-    Received: 9
+    Received: -7
 
       20 |   it('get the closest value for 2 positive value and 1 negative value', () => {
       21 |     
@@ -104,7 +104,7 @@ FAIL ./hiker.test.js
 Test Suites: 1 failed, 1 total
 Tests:       5 failed, 5 total
 Snapshots:   0 total
-Time:        1.527 s
+Time:        1.628 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -115,4 +115,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_39_55_469Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_40_22_887Z-debug.log
