@@ -1,6 +1,6 @@
 'use strict';
 
-const answer = require('./hiker');
+const closestToZero = require('./hiker');
 
 describe('Testing the close to zero function', () => {
   it('get the closest value for positive value', () => {
