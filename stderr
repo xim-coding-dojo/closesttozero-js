@@ -1,28 +1,25 @@
 FAIL ./hiker.test.js
-  answer
-    ✕ to life the universe and everything (5 ms)
+  Testing the close to zero function
+    ✕ get the closest value for positive value (1 ms)
 
-  ● answer › to life the universe and everything
+  ● Testing the close to zero function › get the closest value for positive value
 
-    expect(received).toEqual(expected) // deep equality
+    ReferenceError: closestToZero is not defined
 
-    Expected: 42
-    Received: 54
+       6 |   it('get the closest value for positive value', () => {
+       7 |     
+    >  8 |     expect(closestToZero([1,2])).toEqual(1);
+         |     ^
+       9 |   });
+      10 | });
+      11 | 
 
-       5 | describe('answer', () => {
-       6 |   it('to life the universe and everything', () => {
-    >  7 |     expect(answer()).toEqual(42);
-         |                      ^
-       8 |   });
-       9 | });
-      10 | 
-
-      at Object.<anonymous> (hiker.test.js:7:22)
+      at Object.<anonymous> (hiker.test.js:8:5)
 
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        1.975 s
+Time:        1.337 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -33,4 +30,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T18_10_35_526Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T18_14_37_426Z-debug.log

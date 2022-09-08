@@ -2,8 +2,9 @@
 
 const answer = require('./hiker');
 
-describe('answer', () => {
-  it('to life the universe and everything', () => {
-    expect(answer()).toEqual(42);
+describe('Testing the close to zero function', () => {
+  it('get the closest value for positive value', () => {
+    
+    expect(closestToZero([1,2])).toEqual(1);
   });
 });
