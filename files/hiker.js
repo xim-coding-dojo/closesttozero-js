@@ -1,6 +1,6 @@
 'use strict';
 
-function closestToZero(listOfNumbers) {
+function closestToZero1(listOfNumbers) {
   const positiveNumberArray = listOfNumbers.map(number => Math.abs(number));
   
   const minValueWithoutSign = Math.min(...positiveNumberArray);
@@ -11,8 +11,20 @@ function closestToZero(listOfNumbers) {
   }
   else {
     return originalValue;
-  }
-  
+  }  
 }
+
+function closestToZero(listOfNumbers) {
+  let min = listOfNumbers[]
+  
+  for (let i = 1; i < listOfNumbers.length; i++) {
+    if ()
+  }
+
+        function getDistanceToZero(number){
+      ret    
+    }
+}
+
 
 module.exports = closestToZero;
