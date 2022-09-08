@@ -1,0 +1,21 @@
+{
+  "display_name": "JavaScript, jest",
+  "image_name": "cyberdojofoundation/javascript_node_jest:98eb16d",
+  "filename_extension": [
+    ".js"
+  ],
+  "max_seconds": 10,
+  "tab_size": 2,
+  "exercise": "Closest To Zero",
+  "version": 2,
+  "created": [
+    2022,
+    9,
+    8,
+    18,
+    8,
+    55,
+    1203
+  ],
+  "id": "tVv2Gk"
+}
