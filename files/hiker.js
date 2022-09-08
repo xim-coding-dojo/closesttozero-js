@@ -56,13 +56,13 @@ function closestToZero3(listOfNumbers){
     return minValue.originalValue;
 }
 
-function closestToZero(listOfNumbers){
+function closestToZero4(listOfNumbers){
   let sorted = listOfNumbers.sort((a,b) => {
     let a_distance = Math.abs(a);
     let b_distance = Math.abs(b);
 
     if(a_distance > b_distance) {
-            return 1;
+       return 1;
     }else if(a_distance == b_distance && b_distance > a_distance){
       return 1;
     }else{
@@ -70,10 +70,27 @@ function closestToZero(listOfNumbers){
     }
   });
   
-  console.log(sorted);
   return sorted[0];
 }
 
-
+function closestToZero(listOfNumbers){
+  if(listOfNumbers.length>1){
+    let a = listOfNumbers[0];
+    let a_distance = Math.abs(a);
+    
+    let b = closestToZero(listOfNumbers.slice(1));
+    let b_distance = Math.abs(b);
+    
+    if(a_distance > b_distance) {
+       listOfNumbers[0] = b;
+    }else if(a_distance == b_distance && b_distance > a_distance){
+      return b;
+    }else{
+      return a;
+    }
+  }else{
+    return a;
+  }
+}
 
 module.exports = closestToZero;
