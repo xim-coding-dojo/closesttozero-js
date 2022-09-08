@@ -1,7 +1,7 @@
 'use strict';
 
 function closestToZero(listOfNumbers) {
-  const minValue = Math.min(listOfNUmbers);
+  const minValue = Math.min(listOfNumbers);
   
   return minValue;
 }
