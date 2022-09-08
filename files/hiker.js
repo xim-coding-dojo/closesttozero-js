@@ -1,7 +1,9 @@
 'use strict';
 
-function closestToZero(listofNumbers) {
-  return 1;
+function closestToZero(listOfNumbers) {
+  const minValue = Math.min(listOfNUmbers);
+  
+  return minValue;
 }
 
 module.exports = closestToZero;
