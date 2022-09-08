@@ -3,7 +3,7 @@
 const closestToZero = require('./hiker');
 
 describe('Testing the close to zero function', () => {
-  fit('get the closest value for 2 positive value', () => {
+  it('get the closest value for 2 positive value', () => {
     
     expect(closestToZero([2,1])).toEqual(1);
   });
