@@ -83,7 +83,7 @@ function closestToZero(listOfNumbers){
     
     if(a_distance > b_distance) {
        return b;
-    }else if(a_distance == b_distance && b_distance > a_distance){
+    }else if(a_distance == b_distance && b > a){
       return b;
     }else{
       return a;
