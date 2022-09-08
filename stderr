@@ -7,70 +7,42 @@ npm ERR! Failed at the @ lint script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_32_32_046Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_38_11_187Z-debug.log
 FAIL ./hiker.test.js
-  Testing the close to zero function
-    ✓ get the closest value for 2 positive value (21 ms)
-    ✓ get the closest value for 3 positive value (2 ms)
-    ✕ get the closest value for 2 positive value and 1 negative value (3 ms)
-    ✕ get the closest value for 2 positive value and 1 negative value (2 ms)
-    ✕ get the closest value for 2 positive value and 1 negative value with a tie (1 ms)
+  ● Test suite failed to run
 
-  ● Testing the close to zero function › get the closest value for 2 positive value and 1 negative value
+    Jest encountered an unexpected token
 
-    expect(received).toEqual(expected) // deep equality
+    This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
 
-    Expected: 2
-    Received: -7
+    By default, if Jest sees a Babel config, it will use that to transform your files, ignoring "node_modules".
 
-      15 |   it('get the closest value for 2 positive value and 1 negative value', () => {
-      16 |     
-    > 17 |     expect(closestToZero([-7,2,9])).toEqual(2);
-         |                                     ^
-      18 |   });
-      19 |   
-      20 |   it('get the closest value for 2 positive value and 1 negative value', () => {
+    Here's what you can do:
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
 
-      at Object.<anonymous> (hiker.test.js:17:37)
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/en/configuration.html
 
-  ● Testing the close to zero function › get the closest value for 2 positive value and 1 negative value
+    Details:
 
-    expect(received).toEqual(expected) // deep equality
+    SyntaxError: /sandbox/hiker.js: Unexpected token (62:12)
 
-    Expected: -2
-    Received: -7
+      60 |   let sorted = listOfNumbers.sort((a,b) => {
+      61 |     let a_distance = 
+    > 62 |             if(previousValue.distance > currentValue.distance) {
+         |             ^
+      63 |             return currentValue;
+      64 |         }
+      65 |   });
 
-      20 |   it('get the closest value for 2 positive value and 1 negative value', () => {
-      21 |     
-    > 22 |     expect(closestToZero([-7,-2,9])).toEqual(-2);
-         |                                      ^
-      23 |   });
-      24 |   
-      25 |   it('get the closest value for 2 positive value and 1 negative value with a tie', () => {
-
-      at Object.<anonymous> (hiker.test.js:22:38)
-
-  ● Testing the close to zero function › get the closest value for 2 positive value and 1 negative value with a tie
-
-    expect(received).toEqual(expected) // deep equality
-
-    Expected: 2
-    Received: -7
-
-      25 |   it('get the closest value for 2 positive value and 1 negative value with a tie', () => {
-      26 |     
-    > 27 |     expect(closestToZero([-7,-2,2])).toEqual(2);
-         |                                      ^
-      28 |   });
-      29 | });
-      30 | 
-
-      at Object.<anonymous> (hiker.test.js:27:38)
+      at Parser._raise (../etc/jest/node_modules/@babel/parser/src/parser/error.js:60:45)
 
 Test Suites: 1 failed, 1 total
-Tests:       3 failed, 2 passed, 5 total
+Tests:       0 total
 Snapshots:   0 total
-Time:        1.539 s
+Time:        1.533 s
 Ran all test suites.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1
@@ -81,4 +53,4 @@ npm ERR! Failed at the @ test script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_32_34_600Z-debug.log
+npm ERR!     /home/sandbox/.npm/_logs/2022-09-08T19_38_13_775Z-debug.log

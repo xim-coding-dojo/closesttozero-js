@@ -57,7 +57,13 @@ function closestToZero3(listOfNumbers){
 }
 
 function closestToZero(listOfNumbers){
-  let sorted = listOfNumbers.sort((a,b) => a-b);
+  let sorted = listOfNumbers.sort((a,b) => {
+    let a_distance = 
+            if(previousValue.distance > currentValue.distance) {
+            return currentValue;
+        }
+  });
+  
   console.log(sorted)
   return sorted[0]
 }
