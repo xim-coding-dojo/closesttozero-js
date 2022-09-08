@@ -7,5 +7,5 @@ PASS ./hiker.test.js
 Test Suites: 1 passed, 1 total
 Tests:       3 passed, 3 total
 Snapshots:   0 total
-Time:        1.329 s
+Time:        1.369 s
 Ran all test suites.

@@ -5,7 +5,7 @@ function closestToZero(listOfNumbers) {
   
   const minValue = Math.min(...positiveNumberArray);
   
-  return minValue;
+  return listOfNumbers[positiveNumberArray.indexOf(minValue)];
 }
 
 module.exports = closestToZero;
