@@ -35,7 +35,7 @@ function closestToZero2(listOfNumbers) {
 }
 
 function closestToZero(listOfNumbers){
-  const minValue = array1
+  const minValue = listOfNumbers
      .map(originalValue => {
        return {originalValue:originalValue, distance:Math.abs(originalValue)}
      })
