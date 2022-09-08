@@ -35,7 +35,22 @@ function closestToZero2(listOfNumbers) {
 }
 
 function closestToZero(listOfNumbers){
-  
+  const minValue = array1
+     .map(originalValue => {originalValue:originalValue, distance:Math.abs(originalValue)}
+     .reduce(
+      (previousValue, currentValue) => {
+        if(previousValue.distance > currentValue.distance) {
+           return currentValue;
+        }
+        else if(previousValue.distance == currentValue.distance && currentValue.originalValue > previousValue.originalValue) {
+            return currentValue
+        }
+        else {
+          return previousValue
+        }
+    );
+       
+    return minValue.originalValue;
 }
 
 module.exports = closestToZero;
