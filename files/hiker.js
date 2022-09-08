@@ -50,6 +50,7 @@ function closestToZero(listOfNumbers){
         else {
           return previousValue
         }
+      }
     );
        
     return minValue.originalValue;
