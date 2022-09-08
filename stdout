@@ -4,16 +4,47 @@
 
 
 /sandbox/hiker.js
-  62:13  error  Parsing error: Unexpected token if
+  40:78  error  Missing semicolon  semi
+  48:32  error  Missing semicolon  semi
+  51:31  error  Missing semicolon  semi
+  69:22  error  Missing semicolon  semi
+  70:19  error  Missing semicolon  semi
 
-✖ 1 problem (1 error, 0 warnings)
+✖ 5 problems (5 errors, 0 warnings)
+  5 errors and 0 warnings potentially fixable with the `--fix` option.
 
 
 > @ test /sandbox
 > jest --coverage
 
+  console.log
+    [ 2, 1 ]
+
+      at closestToZero (hiker.js:69:11)
+
+  console.log
+    [ 9, 7, 2 ]
+
+      at closestToZero (hiker.js:69:11)
+
+  console.log
+    [ 9, -7, 2 ]
+
+      at closestToZero (hiker.js:69:11)
+
+  console.log
+    [ 9, -7, -2 ]
+
+      at closestToZero (hiker.js:69:11)
+
+  console.log
+    [ -7, -2, 2 ]
+
+      at closestToZero (hiker.js:69:11)
+
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
-All files |       0 |        0 |       0 |       0 |                   
+All files |   23.53 |    11.11 |   22.22 |      25 |                   
+ hiker.js |   23.53 |    11.11 |   22.22 |      25 | 4-56              
 ----------|---------|----------|---------|---------|-------------------
